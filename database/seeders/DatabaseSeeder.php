@@ -14,5 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        
+        //KITA PANGGIL SEEDER NYA TERSEBUT 
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
